@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Trying out backend push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestDataObject.java" afterDir="false" />
+    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Preliminary product class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestDataObject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724241274772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trying out backend push">
+      <option name="closed" value="true" />
+      <created>1724947935763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724947935763</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Preliminary product class">
+      <option name="closed" value="true" />
+      <created>1724947975841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724947975841</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Trying out backend push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying out backend push" />
+    <MESSAGE value="Preliminary product class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preliminary product class" />
   </component>
 </project>
