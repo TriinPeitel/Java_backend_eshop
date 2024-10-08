@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Preliminary product class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/model/RegistrationBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/TestDataObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Stock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/TestDataObject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -113,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724947975841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Preliminary product class">
+      <option name="closed" value="true" />
+      <created>1726223584771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726223584771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

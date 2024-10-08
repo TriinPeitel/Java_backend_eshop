@@ -57,9 +57,9 @@ public class Product {
      * The stock availability of the product.
      */ //is it the same as stockAvailability
     @OneToOne(mappedBy = "product", cascade = CascadeType.REMOVE, optional = false, orphanRemoval = true)
-    private Inventory inventory;
-    //@Column(name = "stock_availability", nullable = false)
-    //private Integer stockAvailability;
+    private Stock stock;
+    @Column(name = "stock_availability", nullable = false)
+    private Integer stockAvailability;
 
     /**
      * Gets the id of the product.
