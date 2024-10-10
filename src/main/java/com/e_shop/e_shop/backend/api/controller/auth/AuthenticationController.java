@@ -1,5 +1,7 @@
 package com.e_shop.e_shop.backend.api.controller.auth;
 
+import com.e_shop.e_shop.backend.api.model.LoginBody;
+import com.e_shop.e_shop.backend.api.model.LoginResponse;
 import com.e_shop.e_shop.backend.api.model.RegistrationBody;
 import com.e_shop.e_shop.backend.exception.UserAlreadyExistsException;
 import com.e_shop.e_shop.backend.service.UserService;
@@ -28,4 +30,16 @@ public class AuthenticationController {
         }
     }
 
+    @PostMapping("/login")
+    public ResponseEntity<LoginResponse> loginUser(@Valid @RequestBody LoginBody loginBody) {
+        String jwt = userService.loginUser(loginBody);
+        if (jwt == null) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        } else {
+            LoginResponse response = new LoginResponse();
+            response.setJwt(jwt);
+            return ResponseEntity.ok(response);
+        }
+
+    }
 }
