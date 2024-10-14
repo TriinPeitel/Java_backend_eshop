@@ -23,11 +23,16 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
+    /**The name of the product*/
+    @Column(name = "name", nullable = false, unique = true)
+    private String name;
     /**
      * The brand of the product.
-     */
-    @Column(name = "brand", nullable = false)//changed from name
+     **/
+
+    @Column(name = "brand")//changed from name
     private String brand;
+
     /**
      * The title of the product.
      */
@@ -58,6 +63,7 @@ public class Product {
      */ //is it the same as stockAvailability
     @OneToOne(mappedBy = "product", cascade = CascadeType.REMOVE, optional = false, orphanRemoval = true)
     private Stock stock;
+
     @Column(name = "stock_availability", nullable = false)
     private Integer stockAvailability;
 
@@ -84,6 +90,7 @@ public class Product {
      *
      * @return The brand.
      */
+
     public String getBrand() {
         return brand;
     }
@@ -93,6 +100,7 @@ public class Product {
      *
      * @param brand The brand.
      */
+
     public void setBrand(String brand) {
         this.brand = brand;
     }

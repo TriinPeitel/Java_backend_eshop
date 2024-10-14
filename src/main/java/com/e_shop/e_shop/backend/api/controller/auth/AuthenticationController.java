@@ -4,10 +4,12 @@ import com.e_shop.e_shop.backend.api.model.LoginBody;
 import com.e_shop.e_shop.backend.api.model.LoginResponse;
 import com.e_shop.e_shop.backend.api.model.RegistrationBody;
 import com.e_shop.e_shop.backend.exception.UserAlreadyExistsException;
+import com.e_shop.e_shop.backend.model.TeliaUser;
 import com.e_shop.e_shop.backend.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -42,4 +44,9 @@ public class AuthenticationController {
         }
 
     }
+
+    @GetMapping("/me")
+    public TeliaUser getLoggedInUserProfile(@AuthenticationPrincipal TeliaUser user) {
+        return user;
+    };
 }

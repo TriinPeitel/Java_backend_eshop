@@ -4,18 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Preliminary product class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/model/LoginBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/model/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/EncryptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/JWTService.java" afterDir="false" />
+    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Implemented login with security (password encryption)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/order/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/security/JWTRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/WebOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/JWTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +78,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Java_backend_eshop" />
@@ -130,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728393850047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented login with security (password encryption)">
+      <option name="closed" value="true" />
+      <created>1728566107457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728566107457</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Trying out backend push" />
     <MESSAGE value="Preliminary product class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preliminary product class" />
+    <MESSAGE value="Implemented login with security (password encryption)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented login with security (password encryption)" />
   </component>
 </project>
