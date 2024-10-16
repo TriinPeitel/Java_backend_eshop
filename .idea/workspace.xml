@@ -4,30 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Implemented login with security (password encryption)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/order/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/product/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/security/JWTRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/WebOrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="0966cdec-c3b9-45c2-8767-39f82d3c52ca" name="Changes" comment="Implementing security for endpoints but getting a 403 Forbidden response in Postman. The problem is probably in WebSecurityConfig.java because the tutorial is using an old version of &#10;http.authorizeHttpRequests()&#10;        // Specific exclusions or rules.&#10;        .requestMatchers(&quot;/product&quot;, &quot;/auth/register&quot;, &quot;/auth/login&quot;).permitAll()&#10;        // Everything else should be authenticated.&#10;        .anyRequest().authenticated();">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/order/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/product/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/service/ProductService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/TeliaUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/service/JWTService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/controller/auth/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaOrderQuantities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/TeliaUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/model/dao/LocalUserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/e_shop/e_shop/backend/api/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/e_shop/e_shop/backend/api/security/WebSecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/triinpeitel/Desktop/Java_backend_eshop&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/triinpeitel/Desktop/Java_backend_eshop",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -155,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728566107457</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented a few endpoints (product, order)">
+      <option name="closed" value="true" />
+      <created>1728909233393</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728909233393</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +177,8 @@
     <MESSAGE value="Trying out backend push" />
     <MESSAGE value="Preliminary product class" />
     <MESSAGE value="Implemented login with security (password encryption)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented login with security (password encryption)" />
+    <MESSAGE value="Implemented a few endpoints (product, order)" />
+    <MESSAGE value="Implementing security for endpoints but getting a 403 Forbidden response in Postman. The problem is probably in WebSecurityConfig.java because the tutorial is using an old version of &#10;http.authorizeHttpRequests()&#10;        // Specific exclusions or rules.&#10;        .requestMatchers(&quot;/product&quot;, &quot;/auth/register&quot;, &quot;/auth/login&quot;).permitAll()&#10;        // Everything else should be authenticated.&#10;        .anyRequest().authenticated();" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing security for endpoints but getting a 403 Forbidden response in Postman. The problem is probably in WebSecurityConfig.java because the tutorial is using an old version of &#10;http.authorizeHttpRequests()&#10;        // Specific exclusions or rules.&#10;        .requestMatchers(&quot;/product&quot;, &quot;/auth/register&quot;, &quot;/auth/login&quot;).permitAll()&#10;        // Everything else should be authenticated.&#10;        .anyRequest().authenticated();" />
   </component>
 </project>
