@@ -19,6 +19,7 @@ public class JWTService {
     private int expiryInSeconds;
     private Algorithm algorithm;
     private static final String USERNAME_KEY = "USERNAME";
+    private static final static String EMAIL_KEY = "EMAIL";
 
     @PostConstruct
     public void postConstruct() {
@@ -33,7 +34,16 @@ public class JWTService {
                 .sign(algorithm);
     }
 
+    public String generateVerificationJWT(TeliaUser user) {
+        return JWT.create()
+                .withClaim(EMAIL_KEY, user.getEmail())
+                .withExpiresAt(new Date(System.currentTimeMillis() + (1000*expiryInSeconds)))
+                .withIssuer(issuer)
+                .sign(algorithm);
+    }
+
     public String getUsername(String token) {
         return JWT.decode(token).getClaim(USERNAME_KEY).asString();
     }
+
 }
